@@ -1,0 +1,73 @@
+@font-face {
+  font-family: SourceSansPro;
+  font-display: auto;
+  src: url("/assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  font-display: auto;
+  font-weight: 100;
+  src: url("/assets/fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  font-display: auto;
+  font-style: italic;
+  font-weight: 100;
+  src: url("/assets/fonts/SourceSansPro-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  font-display: auto;
+  font-style: italic;
+  src: url("/assets/fonts/SourceSansPro-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  font-display: auto;
+  font-weight: 50;
+  src: url("/assets/fonts/SourceSansPro-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  font-display: auto;
+  font-weight: 50;
+  font-style: italic;
+  src: url("/assets/fonts/SourceSansPro-LightItalic.ttf") format("truetype");
+}
+
+* {
+  font-family: SourceSansPro;
+  margin: auto;
+}
+
+.wrapper {
+  border: solid;
+  width: 100vw;
+}
+
+.wrapper .headline {
+  border: solid;
+}
+
+.wrapper .headline h1 {
+  text-align: center;
+  font-weight: 100;
+}
+
+.wrapper .headline p {
+  text-align: center;
+}
+
+.wrapper .form-box {
+  border: solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
