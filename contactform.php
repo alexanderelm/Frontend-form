@@ -6,7 +6,7 @@ if (isset($_POST['send'])) {
     $birthdate = $_POST['birthdate'];
     $tags = $_POST['tags'];
 
-    $mailTo = "alex1999@live.dk";
+    $mailTo = "wrgsoavzkvijzieleo@avxrja.com";
     $headers = "From: ".$mailFrom;
     $txt = "you recvied a mail from ".$name.".\n\n".$tags;
 
