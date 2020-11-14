@@ -21,7 +21,7 @@
         </div>  
 
         <div class="form-box">
-            <form class="contact-form" action="https://formspree.io/f/mnqozvbo" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/mnqozvbo" method="POST" id="contact-form">
 
                 <label for="name">name</label>
                 <input id="name" type="name" name="Name" placeholder="Full name">
@@ -37,10 +37,14 @@
 
                 <script src="scripts/tags.js"></script>
 
-                <button type="submit">Submit</button>
+                <button id="submit" type="submit">Submit</button>
             </form>
+
+            <div id="status"></div>
         </div>
     </div>
+
+    <script src="scripts/main.js"></script>
 </body>
 
 <!--tag

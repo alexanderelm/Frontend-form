@@ -70,4 +70,12 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.wrapper #status.success {
+  background-color: green;
+}
+
+.wrapper #status.error {
+  background-color: red;
+}
 /*# sourceMappingURL=main.css.map */
