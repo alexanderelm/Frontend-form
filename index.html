@@ -14,33 +14,43 @@
 </head>
 
 <body>
+
+    <div class="headline">
+        <h1>Roskilde Festival</h1>
+        <p>Wish up to 5 artists for this years Roskilde Festival</p>
+    </div>  
     <div class="wrapper">
-        <div class="headline">
-            <h1>Roskilde Festival</h1>
-            <p>Wish up to 5 artists for this years Roskilde Festival</p>
-        </div>  
 
-        <div class="form-box">
-            <form class="contact-form" action="https://formspree./f/mnqozvbo" method="POST" id="contact-form">
+      <form class="contact-form" action="https://formspree./f/mnqozvbo" method="POST" id="contact-form">
+        
+        <label for="name">name</label>
+      <div class="form-group">
+          <input required id="name" type="name" name="Name" placeholder="Full name">
+      </div>
 
-                <label for="name">name</label>
-                <input required id="name" type="name" name="Name" placeholder="Full name">
+      <label for="email">Email</label>
+      <div class="form-group">
+          <input required id="email" type="email" name="Email" placeholder="Your E-mail">
+      </div>
 
-                <label for="email">Email</label>
-                <input required id="email" type="email" name="Email" placeholder="Your E-mail">
+      <label for="birthdate">Date of birth</label>
+      <div class="form-group">
+          <input required type="date" name="Birthdate" placeholder="Date of birth">
+      </div>
 
-                <label for="birthdate">Date of birth</label>
-                <input required type="date" name="Birthdate" placeholder="Date of birth">
+      <label for="input-tags">Events</label>
+      <div class="form-group">
+          <input required name="Tags" id="input-tags"/>
+      </div>
 
-                <label for="input-tags">Events</label>
-                <input required name="Tags" id="input-tags"/>
-                <button id="submit" type="submit">Submit</button>
+      <div class="form-group">
+          <button id="submit" type="submit">Submit</button>
+      </div>
 
-                <script src="scripts/tags.js"></script>
-            </form>
+      <div id="status"></div>
+          <script src="scripts/tags.js"></script>
+      </form>
 
-            <div id="status"></div>
-        </div>
     </div>
 
     <script src="scripts/main.js"></script>

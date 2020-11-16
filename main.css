@@ -43,32 +43,60 @@
 
 * {
   font-family: SourceSansPro;
-  margin: auto;
+  margin: 0;
 }
 
-.wrapper {
-  border: solid;
-  width: 100vw;
+body {
+  overflow: hidden;
 }
 
-.wrapper .headline {
-  border: solid;
+.headline {
+  margin-top: 100px;
 }
 
-.wrapper .headline h1 {
+.headline h1 {
   text-align: center;
   font-weight: 100;
 }
 
-.wrapper .headline p {
+.headline p {
   text-align: center;
 }
 
-.wrapper .form-box {
-  border: solid;
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper form {
+  margin-top: 50px;
+  display: block;
+  text-align: center;
+}
+
+.wrapper form .form-group input {
+  color: red;
+}
+
+.wrapper form .form-group input:hover {
+  color: aqua;
+}
+
+.wrapper form .form-group button {
+  margin-top: 20px;
+}
+
+.wrapper form label {
+  display: block;
+  margin-top: 20px;
+}
+
+.wrapper #status {
+  margin-top: 20px;
 }
 
 .wrapper #status.success {

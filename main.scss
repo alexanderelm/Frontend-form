@@ -43,36 +43,59 @@
 
 *{
     font-family: SourceSansPro;
-    margin: auto;
+    margin: 0;
+}
+
+body{
+  overflow: hidden;
+}
+
+
+.headline{
+  margin-top: 100px;
+
+  & h1{
+      text-align: center;
+      font-weight: 100;
+  }
+
+  & p{
+      text-align: center;
+  }
 }
 
 .wrapper{
-    border: solid;
-    width: 100vw;
+    display: flex;
+    justify-content: center;
 
-    & .headline{
-        border: solid;
+    & form{
+      margin-top: 50px;
+      display: block;
+      text-align: center;
+  
+      & .form-group{
 
-        & h1{
-            text-align: center;
-            font-weight: 100;
+        & input{
+          color: red;
         }
 
-        & p{
-            text-align: center;
+        & input:hover{
+          color: aqua;
         }
-    }
 
-    & .form-box{
-        border: solid;
-        display: flex;
-
-        & form{
-         
+        & button{
+          margin-top: 20px;
         }
+      }
+
+      & label{
+        display: block;
+        margin-top: 20px;
+      }
     }
 
     & #status{
+      margin-top: 20px;
 
       &.success{
         background-color: green;
