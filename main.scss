@@ -41,6 +41,20 @@
     src: url("/assets/fonts/SourceSansPro-LightItalic.ttf") format("truetype");
   }
 
+  @font-face {
+    font-family: GTWalsheimPro;
+    font-display: auto;
+    font-weight: 50;
+    src: url("/assets/fonts/GTWalsheimPro-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: GTWalsheimPro;
+    font-display: auto;
+    font-weight: 100;
+    src: url("/assets/fonts/GTWalsheimPro-UltraBold.ttf") format("truetype");
+  }
+
 *{
     font-family: SourceSansPro;
     margin: 0;
@@ -48,20 +62,22 @@
 
 body{
   overflow: hidden;
+  background-image: url(/assets/img/footer_image.jpg);
 }
-
 
 .headline{
   margin-top: 5vw;
 
   & h1{
+    font-family: GTWalsheimPro;
       text-align: center;
-      font-weight: 100;
-      -webkit-text-stroke-width: 0 px;
-      -webkit-text-stroke-color: green;
-      background: rgb(0,0,0);
-      background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%); 
-      animation: Rainbow 5s ease infinite;
+      font-weight: 50;
+      font-size: 100px;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 50%); 
+      animation: Rainbow 30s ease infinite;
       background-size: 200%;
       -webkit-background-clip: text;
       color: transparent;
@@ -69,36 +85,107 @@ body{
 
   & p{
       text-align: center;
+      color: white;
+      font-weight: 50;
+      font-size: 24px;
   }
 }
 
+.tag-input:hover{
+  outline: none;
+  border: none;
+}
+
 .wrapper{
+    color: white;
     display: flex;
     justify-content: center;
 
     & form{
+      height: 450px;
+      width: 400px;
       margin-top: 50px;
       display: block;
       text-align: center;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-radius: 5px;
+      padding: 20px;
+      border: solid 1px #ee7203;
+      -webkit-box-shadow: 0px 10px 42px 12px rgba(238,114,3,0.75);
+      -moz-box-shadow: 0px 10px 42px 12px rgba(238,114,3,0.75);
+      box-shadow: 0px 10px 42px 12px rgba(238,114,3,0.75);
   
       & .form-group{
+        margin: 15px;
 
         & input{
-          color: red;
+          color: #ee7203;
+          height: 40px;
+          width: 220px;
+          padding: 5px;
+          font-size: 18px;
+          font-weight: 100;
+          background: transparent;
+          appearance: none;
+          border-radius: 2px;
+          border: 2px solid transparent;
+          border-bottom: 2px solid #ee7203;
         }
 
-        & input:hover{
-          color: aqua;
+        & input:valid,
+          input:focus{
+          outline: none;
+          border-color: #ee7203;
+          transition: border-color .3s ease;
+          transition-delay: .15s;
+        }
+
+        & input:valid + .placeholder,
+        input:focus + .placeholder{
+        top: 10px;
+        font-size: 12px;
+        background-color: black;
+        color: white;
+        padding: 0 5px;
+      }
+
+        & .placeholder{
+          font-weight: 100;
+          position: absolute;
+          left: 8px;
+          top: calc(50% + 8px);
+          transform: translateY(-50%);
+          color: #aaa;
+          transition: .5s;       
+        }
+
+        & .tags{
+          background-color: transparent;
+          outline: none;
+          border: 2px solid transparent;
+          border-bottom: 2px solid #ee7203;
         }
 
         & button{
           margin-top: 20px;
+          color: white;
+          font-weight: 100;
+          font-size: 20px;
+          height: 50px;
+          width: 120px;
+          border: 2px solid #ee7203;
+          background: transparent;
+          border-radius: 2px;
+        }
+
+        & button:focus{
+          outline: none;
         }
       }
 
       & label{
-        display: block;
-        margin-top: 20px;
+        position: relative;
+        padding-top: 20px;
       }
     }
 
@@ -117,12 +204,18 @@ body{
 
 @-webkit-keyframes Rainbow {
   0% {
-    background-position: 100% 0%;
+    background-position: 80%;
+  }
+  25% {
+    background-position: 0%;
   }
   50% {
-    background-position: 0% 100%;
+    background-position: -80%;
+  }
+  75% {
+    background-position: 0%;
   }
   100% {
-    background-position: 100% 0%;
+    background-position: 80%;
   }
 }
