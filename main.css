@@ -51,12 +51,22 @@ body {
 }
 
 .headline {
-  margin-top: 100px;
+  margin-top: 5vw;
 }
 
 .headline h1 {
   text-align: center;
   font-weight: 100;
+  -webkit-text-stroke-width: 0 px;
+  -webkit-text-stroke-color: green;
+  background: black;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(white));
+  background: linear-gradient(90deg, black 0%, white 100%);
+  -webkit-animation: Rainbow 5s ease infinite;
+          animation: Rainbow 5s ease infinite;
+  background-size: 200%;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .headline p {
@@ -105,5 +115,17 @@ body {
 
 .wrapper #status.error {
   background-color: red;
+}
+
+@-webkit-keyframes Rainbow {
+  0% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
