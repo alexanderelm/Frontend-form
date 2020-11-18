@@ -1,14 +1,14 @@
 @font-face {
   font-family: SourceSansPro;
   font-display: auto;
-  src: url("https://alexanderelm.github.io/Frontend-form/assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
+  src: url("assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: SourceSansPro;
   font-display: auto;
   font-weight: 100;
-  src: url("https://alexanderelm.github.io/Frontend-form/assets/fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+  src: url("assets/fonts/SourceSansPro-SemiBold.ttf") format("truetype");
 }
 
 @font-face {
@@ -16,21 +16,21 @@
   font-display: auto;
   font-style: italic;
   font-weight: 100;
-  src: url("https://alexanderelm.github.io/Frontend-form/assets/fonts/SourceSansPro-SemiBoldItalic.ttf") format("truetype");
+  src: url("assets/fonts/SourceSansPro-SemiBoldItalic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: SourceSansPro;
   font-display: auto;
   font-style: italic;
-  src: url("https://alexanderelm.github.io/Frontend-form/assets/fonts/SourceSansPro-Italic.ttf") format("truetype");
+  src: url("assets/fonts/SourceSansPro-Italic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: SourceSansPro;
   font-display: auto;
   font-weight: 50;
-  src: url("https://alexanderelm.github.io/Frontend-form/assets/fonts/SourceSansPro-Light.ttf") format("truetype");
+  src: url("assets/fonts/SourceSansPro-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -38,7 +38,7 @@
   font-display: auto;
   font-weight: 50;
   font-style: italic;
-  src: url("https://alexanderelm.github.io/Frontend-form/assets/fonts/SourceSansPro-LightItalic.ttf") format("truetype");
+  src: url("assets/fonts/SourceSansPro-LightItalic.ttf") format("truetype");
 }
 
 @font-face {
