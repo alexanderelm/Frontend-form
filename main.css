@@ -79,8 +79,8 @@ body {
   background: white;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, rgba(255, 255, 255, 0)));
   background: linear-gradient(90deg, white 50%, rgba(255, 255, 255, 0) 50%);
-  -webkit-animation: Rainbow 30s ease infinite;
-          animation: Rainbow 30s ease infinite;
+  -webkit-animation: rfAnimation 30s ease infinite;
+          animation: rfAnimation 30s ease infinite;
   background-size: 200%;
   -webkit-background-clip: text;
   color: transparent;
@@ -109,7 +109,7 @@ body {
 }
 
 .wrapper form {
-  height: 450px;
+  height: 460px;
   width: 400px;
   margin-top: 50px;
   display: block;
@@ -127,7 +127,7 @@ body {
 }
 
 .wrapper form .form-group input {
-  color: #ee7203;
+  color: #aaa;
   height: 40px;
   width: 220px;
   padding: 5px;
@@ -140,6 +140,10 @@ body {
   border-radius: 2px;
   border: 2px solid transparent;
   border-bottom: 2px solid #ee7203;
+}
+
+.wrapper form .form-group input::-webkit-calendar-picker-indicator {
+  display: none;
 }
 
 .wrapper form .form-group input:valid,
@@ -175,9 +179,21 @@ body {
 
 .wrapper form .form-group .tags {
   background-color: transparent;
-  outline: none;
   border: 2px solid transparent;
   border-bottom: 2px solid #ee7203;
+  display: block;
+  overflow-y: scroll;
+  max-height: 78px;
+}
+
+.wrapper form .form-group .focused {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.wrapper form .form-group .tags::-webkit-scrollbar {
+  display: none;
 }
 
 .wrapper form .form-group button {
@@ -213,7 +229,7 @@ body {
   background-color: red;
 }
 
-@-webkit-keyframes Rainbow {
+@-webkit-keyframes rfAnimation {
   0% {
     background-position: 80%;
   }
