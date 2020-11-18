@@ -69,6 +69,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.bold {
+  font-weight: 100;
+}
+
 .headline {
   margin-top: 5vw;
 }
@@ -130,7 +134,7 @@ body::-webkit-scrollbar {
   height: 40px;
   width: 220px;
   padding: 5px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
   background: transparent;
   -webkit-appearance: none;
@@ -165,7 +169,6 @@ body::-webkit-scrollbar {
 }
 
 .wrapper form .form-group .placeholder {
-  font-weight: 100;
   position: absolute;
   left: 8px;
   top: calc(50% + 8px);
@@ -198,7 +201,6 @@ body::-webkit-scrollbar {
 .wrapper form .form-group button {
   margin-top: 20px;
   color: white;
-  font-weight: 100;
   font-size: 20px;
   height: 50px;
   width: 120px;
@@ -214,6 +216,7 @@ body::-webkit-scrollbar {
 .wrapper form label {
   position: relative;
   padding-top: 20px;
+  font-weight: 100;
 }
 
 .wrapper #status {
