@@ -63,6 +63,7 @@
 body{
   overflow: hidden;
   background-image: url(assets/img/footer_image.jpg);
+  background-position: center;
 }
 
 body::-webkit-scrollbar{
@@ -243,6 +244,28 @@ body::-webkit-scrollbar{
   body{
     overflow-y: scroll;
   }
+
+  .wrapper{
+    margin-bottom: 20vh;
+  }
+  
+@-webkit-keyframes rfAnimation {
+  0% {
+    background-position: 90%;
+  }
+  25% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: -90%;
+  }
+  75% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 90%;
+  }
+}
 }
 
 @media screen and (max-width: 450px){
@@ -250,4 +273,6 @@ body::-webkit-scrollbar{
   h1{
     font-size: 60px;
   }
+
+
 }
