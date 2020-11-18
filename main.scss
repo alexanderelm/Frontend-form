@@ -76,10 +76,10 @@ body::-webkit-scrollbar{
 
 .headline{
   margin-top: 12vh;
+  text-align: center;
 
   & h1{
     font-family: GTWalsheimPro;
-      text-align: center;
       font-weight: 50;
       font-size: 100px;
       -webkit-text-stroke-width: 1px;
@@ -93,7 +93,6 @@ body::-webkit-scrollbar{
   }
 
   & p{
-      text-align: center;
       color: white;
       font-weight: 50;
       font-size: 24px;
@@ -239,7 +238,7 @@ body::-webkit-scrollbar{
   }
 }
 
-@media screen and (max-width: 1500px){
+@media only screen and (max-width: 1500px) and (min-width: 450px){
 
   body{
     overflow-y: scroll;
@@ -268,10 +267,27 @@ body::-webkit-scrollbar{
 }
 }
 
-@media screen and (max-width: 450px){
+@media only screen and (max-width: 450px) and (min-width: 100px){
   
-  h1{
-    font-size: 60px;
+  body{
+    overflow: hidden;
+  }
+
+  .headline{
+
+    & h1{
+      text-align: center;
+    }
+
+    & p{
+      color: #ee7203;
+    }
+  }
+
+  .form{
+    position: absolute;
+    margin: auto;
+    right: 0;
   }
 
 
