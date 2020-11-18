@@ -62,7 +62,7 @@
 
 body {
   overflow: hidden;
-  background-image: url(https://alexanderelm.github.io/Frontend-form/assets/img/footer_image.jpg);
+  background-image: url(assets/img/footer_image.jpg);
 }
 
 body::-webkit-scrollbar {
@@ -101,10 +101,6 @@ body::-webkit-scrollbar {
   font-size: 24px;
 }
 
-.wrapper::-webkit-scrollbar {
-  display: none;
-}
-
 .wrapper {
   color: white;
   display: -webkit-box;
@@ -113,7 +109,6 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-y: scroll;
 }
 
 .wrapper form {
@@ -252,6 +247,12 @@ body::-webkit-scrollbar {
   }
   100% {
     background-position: 80%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  body {
+    overflow-y: scroll;
   }
 }
 /*# sourceMappingURL=main.css.map */

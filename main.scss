@@ -62,7 +62,7 @@
 
 body{
   overflow: hidden;
-  background-image: url(https://alexanderelm.github.io/Frontend-form/assets/img/footer_image.jpg);
+  background-image: url(assets/img/footer_image.jpg);
 }
 
 body::-webkit-scrollbar{
@@ -99,15 +99,10 @@ body::-webkit-scrollbar{
   }
 }
 
-.wrapper::-webkit-scrollbar{
-  display: none;
-}
-
 .wrapper{
     color: white;
     display: flex;
     justify-content: center;
-    overflow-y: scroll;
 
     & form{
       height: 460px;
@@ -240,5 +235,11 @@ body::-webkit-scrollbar{
   }
   100% {
     background-position: 80%;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  body{
+    overflow-y: scroll;
   }
 }
