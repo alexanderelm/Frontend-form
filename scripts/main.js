@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", function() {
       form.reset();
       status.classList.remove('error');
       status.classList.add('success')
-      status.innerHTML = "Thanks!";
+      status.innerHTML = "Wishes submitted successfully!";
     }
 
     function error() {

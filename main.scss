@@ -65,6 +65,10 @@ body{
   background-image: url(/assets/img/footer_image.jpg);
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .headline{
   margin-top: 5vw;
 
@@ -209,6 +213,7 @@ body{
 
       &.success{
         background-color: green;
+        border-radius: 3px;
       }
 
       &.error{
