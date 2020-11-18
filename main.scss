@@ -95,11 +95,6 @@ body::-webkit-scrollbar{
   }
 }
 
-.tag-input:hover{
-  outline: none;
-  border: none;
-}
-
 .wrapper{
     color: white;
     display: flex;
@@ -135,10 +130,10 @@ body::-webkit-scrollbar{
           border: 2px solid transparent;
           border-bottom: 2px solid #ee7203;
         }
+
           & input::-webkit-calendar-picker-indicator{
             display: none;
           }
-
 
         & input:valid,
           input:focus{

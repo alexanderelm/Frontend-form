@@ -97,11 +97,6 @@ body::-webkit-scrollbar {
   font-size: 24px;
 }
 
-.tag-input:hover {
-  outline: none;
-  border: none;
-}
-
 .wrapper {
   color: white;
   display: -webkit-box;
