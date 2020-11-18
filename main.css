@@ -236,14 +236,8 @@ body::-webkit-scrollbar {
   0% {
     background-position: 80%;
   }
-  25% {
-    background-position: 0%;
-  }
   50% {
     background-position: -80%;
-  }
-  75% {
-    background-position: 0%;
   }
   100% {
     background-position: 80%;
@@ -261,14 +255,8 @@ body::-webkit-scrollbar {
     0% {
       background-position: 90%;
     }
-    25% {
-      background-position: 0%;
-    }
     50% {
       background-position: -90%;
-    }
-    75% {
-      background-position: 0%;
     }
     100% {
       background-position: 90%;
@@ -276,20 +264,28 @@ body::-webkit-scrollbar {
   }
 }
 
-@media only screen and (max-width: 450px) and (min-width: 100px) {
+@media screen and (max-width: 450px) {
   body {
-    overflow: hidden;
+    overflow-y: scroll;
+    margin: 10px;
   }
   .headline h1 {
-    text-align: center;
+    font-size: 70px;
   }
   .headline p {
-    color: #ee7203;
+    font-weight: 100;
+    font-size: 22px;
   }
-  .form {
-    position: absolute;
-    margin: auto;
-    right: 0;
+  @-webkit-keyframes rfAnimation {
+    0% {
+      background-position: 100%;
+    }
+    50% {
+      background-position: -100%;
+    }
+    100% {
+      background-position: 100%;
+    }
   }
 }
 /*# sourceMappingURL=main.css.map */
