@@ -74,7 +74,7 @@ body::-webkit-scrollbar{
 }
 
 .headline{
-  margin-top: 5vw;
+  margin-top: 12vh;
 
   & h1{
     font-family: GTWalsheimPro;
@@ -239,10 +239,6 @@ body::-webkit-scrollbar{
 }
 
 @media screen and (max-width: 1500px){
-
-  *{
-    overflow-y: scroll;
-  }
 
   body{
     overflow-y: scroll;
