@@ -101,6 +101,10 @@ body::-webkit-scrollbar {
   font-size: 24px;
 }
 
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .wrapper {
   color: white;
   display: -webkit-box;
@@ -109,6 +113,7 @@ body::-webkit-scrollbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-y: scroll;
 }
 
 .wrapper form {
