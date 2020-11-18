@@ -239,6 +239,11 @@ body::-webkit-scrollbar{
 }
 
 @media screen and (max-width: 1500px){
+
+  *{
+    overflow-y: scroll;
+  }
+
   body{
     overflow-y: scroll;
   }
